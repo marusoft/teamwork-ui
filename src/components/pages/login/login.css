@@ -20,7 +20,7 @@
 .login-info {
   font-size: 1rem;
   margin-top: 2rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 .login-button-get {
   width: 120px;
@@ -79,9 +79,9 @@
   border-radius: 5px;
 }
 
-.forgot-password{
+.forgot-password {
   text-align: right;
-  margin-top: .3rem;
+  margin-top: 0.3rem;
 }
 .login-account {
   display: flex;
@@ -94,9 +94,10 @@
   color: #03a9f4;
   text-decoration: none;
 }
-.account-info{
-  font-size: .9rem;
-  /* padding: .8rem; */
+.account-info {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: gray;
 }
 .login-button {
   width: 120px;
