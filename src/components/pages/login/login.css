@@ -81,13 +81,12 @@
 
 .forgot-password {
   text-align: right;
-  margin-top: 0.3rem;
 }
 .login-account {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .link {

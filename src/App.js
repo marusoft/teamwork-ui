@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import Register from "./components/pages/register/Register"
 import Login from "./components/pages/login/Login";
+import Dashboard from "./components/pages/dashboard/Dashboard"
 
 const App = () => {
   return (
@@ -11,9 +12,9 @@ const App = () => {
           <Route exact path="/" component={Register} />
           <Route path="/register" component={Register} />
           <Route path="/login" component={Login} />
-          {/* <Route exact path="/dashboard" component={Dashboard} />
-          <Route exact path="/404" component={NotFound} />
-          <Redirect to="404" /> */}
+          <Route exact path="/dashboard" component={Dashboard} />
+          {/* <Route exact path="/404" component={NotFound} /> */}
+          {/* <Redirect to="404" /> */}
         </Switch>
       </Router>
     </div>
