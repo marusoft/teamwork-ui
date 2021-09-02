@@ -1,55 +1,121 @@
-.register{
+.register {
   background-color: #03a9f4;
   height: 90vh;
   display: flex;
   justify-content: space-evenly;
 }
-.register-description{
+.register-description {
   color: white;
   font-weight: 700;
   margin-top: 3rem;
-  max-width: 500px;
+  max-width: 470px;
   text-align: center;
 }
-.register-img{
+.register-img {
   width: 300px;
   height: 150px;
   object-fit: cover;
   border-radius: 5px;
 }
-.register-info{
-  font-size: 1.2rem;
-  margin-top: 1.5rem;
+.register-info {
+  font-size: 1rem;
+  margin-top: 2rem;
   font-weight: 700;
 }
-.register-button{
+.register-button-get {
   width: 120px;
-  padding: .7rem;
+  padding: 0.7rem;
   outline: none;
   border: none;
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 5px;
   color: #03a9f4;
-  font-size: .9rem;
-  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
   font-weight: 700;
 }
-.register-form-wrapper{
+.register-form-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.lock {
+  color: white;
+  padding: 0.5rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #03a9f4;
+  font-size: 2.4rem !important;
+}
+.register-form-title {
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  color: #03a9f4;
+  font-weight: 600;
+}
+.register-form-wrapper {
   margin-top: 3rem;
-  width: 480px;
-  height: 510px;
+  width: 700px;
+  height: 470px;
   border-radius: 30px;
   padding: 2.5rem;
   background: #ffffff;
   box-shadow: 3px -5px 40px rgba(205, 205, 212, 0.1);
 }
-.register-form-field{
+
+.register-form-field {
   display: grid;
-  gap: 0.6rem;
+  gap: 0.9rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.register-form-field > input {
+  outline: none;
+  padding: 0.4rem;
+  border: 1px solid #03a9f4;
+  font-size: 0.9rem;
+  border-radius: 5px;
 }
 .span-input {
   grid-column: span 2;
-  border-radius: 10px !important;
 }
-
+.gender {
+  border: 1px solid #03a9f4;
+  outline: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 0.9rem;
+  color: gray;
+}
+.register-account {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.signin-link {
+  margin-left: 0.3rem;
+  color: #03a9f4;
+  font-weight: 500;
+  text-decoration: none;
+}
+.register-button {
+  width: 120px;
+  padding: 0.7rem;
+  outline: none;
+  border: none;
+  background-color: #03a9f4;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.text {
+  color: gray;
+  font-weight: 400;
+}

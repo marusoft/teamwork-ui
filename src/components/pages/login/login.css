@@ -1,0 +1,112 @@
+.login {
+  background-color: #03a9f4;
+  height: 90vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.login-description {
+  color: white;
+  font-weight: 700;
+  margin-top: 3rem;
+  max-width: 470px;
+  text-align: center;
+}
+.login-img {
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.login-info {
+  font-size: 1rem;
+  margin-top: 2rem;
+  font-weight: 700;
+}
+.login-button-get {
+  width: 120px;
+  padding: 0.7rem;
+  outline: none;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #03a9f4;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  font-weight: 700;
+}
+.login-form-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.lock {
+  color: white;
+  padding: 0.5rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #03a9f4;
+  font-size: 2.4rem !important;
+}
+.login-form-title {
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  color: #03a9f4;
+  font-weight: 600;
+}
+.login-form-wrapper {
+  margin-top: 3rem;
+  width: 470px;
+  height: 350px;
+  border-radius: 30px;
+  padding: 2.5rem;
+  background: #ffffff;
+  box-shadow: 3px -5px 40px rgba(205, 205, 212, 0.1);
+}
+
+.login-form-field {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.login-form-field > input {
+  outline: none;
+  padding: 0.4rem;
+  border: 1px solid #03a9f4;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+
+.forgot-password{
+  text-align: right;
+  margin-top: .3rem;
+}
+.login-account {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.link {
+  color: #03a9f4;
+  text-decoration: none;
+}
+.account-info{
+  font-size: .9rem;
+  /* padding: .8rem; */
+}
+.login-button {
+  width: 120px;
+  padding: 0.7rem;
+  outline: none;
+  border: none;
+  background-color: #03a9f4;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 700;
+}

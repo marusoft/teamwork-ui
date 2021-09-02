@@ -1,5 +1,6 @@
 import React from "react";
-import { TextField, Select, InputLabel, MenuItem } from "@material-ui/core";
+import { Link } from "react-router-dom";
+import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Header from "../../layouts/header/Header";
 import "./register.css";
 
@@ -19,88 +20,47 @@ const Register = () => {
             organization. The goal of this application is to facilitate more
             interaction between colleagues and promote team bonding.
           </p>
-          <button className="register-button">Get Started</button>
+          <Link to="/register">
+            <button className="register-button-get">Get Started</button>
+          </Link>
         </div>
         <div className="register-form-wrapper">
-          <span className="register-form-title">Create Employee</span>
+          <div className="register-form-header">
+            {" "}
+            <LockOutlinedIcon className="lock" />
+            <span className="register-form-title">Admin Create Employee</span>
+          </div>
           <div className="register-form">
             <form className="register-form-field">
-              <TextField
-                id="outlined-basic"
-                label="First Name"
-                variant="outlined"
-                size="small"
-                InputProps={{
-                  style: { borderRadius: "10px" },
-                }}
-              />
-              <TextField
-                id="outlined-basic"
-                label="Last Name"
-                variant="outlined"
-                className="lastname"
-                size="small"
-                InputProps={{
-                  style: { borderRadius: "10px" },
-                }}
-              />
-              <TextField
-                id="outlined-basic"
-                label="Department"
-                variant="outlined"
+              <input type="text" placeholder="Username" />
+              <input type="text" placeholder="Firstname" />
+              <input type="text" placeholder="Lastname" />
+              <input type="text" placeholder="Department" required />
+              <input
+                type="text"
+                placeholder="Address"
                 className="span-input"
-                size="small"
-                InputProps={{
-                  style: { borderRadius: "10px" },
-                }}
+                required
               />
-              <TextField
-                id="outlined-basic"
-                label="Job role"
-                variant="outlined"
-                className="span-input"
-                size="small"
-                InputProps={{
-                  style: { borderRadius: "10px" },
-                }}
-              />
-              <TextField
-                id="outlined-basic"
-                label="Address"
-                variant="outlined"
-                className="span-input"
-                size="small"
-                InputProps={{
-                  style: { borderRadius: "10px" },
-                }}
-              />
-              <Select id="outlined-basic" label="Gender" className="span-input">
-                <MenuItem value="male">Male</MenuItem>
-                <MenuItem value="female">Female</MenuItem>
-              </Select>
-              <TextField
-                id="outlined-basic"
-                label="Email Address"
-                variant="outlined"
-                className="span-input"
-                size="small"
-                InputProps={{
-                  style: { borderRadius: "10px" },
-                }}
-              />
-              <TextField
-                id="outlined-password-input"
-                label="Password"
-                type="password"
-                autoComplete="current-password"
-                variant="outlined"
-                className="span-input"
-                size="small"
-                InputProps={{
-                  style: { borderRadius: "10px" },
-                }}
-              />
+              <input type="text" placeholder="Jobrole" required />
+              <select className="gender">
+                <option>Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+              </select>
+              <input type="email" placeholder="Email" required />
+              <input type="password" placeholder="Password" required />
             </form>
+          </div>
+          <div className="register-account">
+            <span className="text">
+              Got an account?{" "}
+              <Link to="/login" className="signin-link">
+                {" "}
+                Sign in
+              </Link>
+            </span>
+            <button className="register-button">Register</button>
           </div>
         </div>
       </div>
