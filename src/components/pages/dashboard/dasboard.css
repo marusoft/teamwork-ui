@@ -1,0 +1,15 @@
+.dashboard{
+
+}
+.logout-btn{
+  width: 120px;
+  padding: 0.7rem;
+  outline: none;
+  border: none;
+  background-color: #03a9f4;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
